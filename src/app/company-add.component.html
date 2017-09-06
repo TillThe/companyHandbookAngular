@@ -1,0 +1,27 @@
+<header class="page-header container">
+  <h1 class="page-title">Справочник по компаниям</h1>
+  <a href="#" class="btn-add" (click)="toggleModal()">Добавить компанию</a>
+</header>
+<aside class="modal" id="modal">
+  <div class="modal-content">
+    <form class="modal-form" (submit)="addItem($event)">
+      <button class="modal-close" (click)="toggleModal()"></button>
+      <h3 class="modal-content-title">Добавить компанию</h3>
+      <div class="input-block">
+        <label>Наименование компании:</label>
+        <input class="form-el" type="text" name="Name" id="Name">
+      </div>
+      <div class="input-block">
+        <label>ИНН компании:</label>
+        <input class="form-el" type="text" name='INN' id="INN">
+      </div>
+      <div class="input-block">
+        <label>Руководитель компании:</label>
+        <input class="form-el" type="text" name="Director" id="Director">
+      </div>
+      <div class="input-block">
+        <input class="btn" type="submit" value="Добавить">
+      </div>
+    </form>
+  </div>
+</aside>

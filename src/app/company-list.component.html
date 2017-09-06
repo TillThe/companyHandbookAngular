@@ -1,0 +1,19 @@
+<section class="company container">
+  <label class="pag-items">Элементов на странице: <input type="number" id="itemsOnPage" [(ngModel)]="itemsOnPage" (change)="changeItemsOnPage()"></label>
+  <table class="company-list">
+    <caption>Список компаний:</caption>
+    <thead>
+    <tr>
+      <th class="sort" sorted="digits" value="INN" reversed="false">ИНН</th>
+      <th class="sort" sorted="letters" value="Name" reversed="false">Наименование</th>
+      <th class="sort" sorted="letters" value="Director" reversed="false">Руководитель</th>
+      <th colspan="2">Управление</th>
+    </tr>
+    </thead>
+    <tbody id="company-list">
+    </tbody>
+  </table>
+  <ul class="pagination container" id="pagination">
+    <li><a href="#page-1">1</a></li>
+  </ul>
+</section>
